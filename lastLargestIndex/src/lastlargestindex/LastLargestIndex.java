@@ -2,7 +2,9 @@ package lastlargestindex;
 import java.util.*;
 
 public class LastLargestIndex {
+   
    static Scanner console = new Scanner(System.in);
+   
      public static void main(String[] args) {
         
         int[] array = new int[10];
@@ -11,22 +13,16 @@ public class LastLargestIndex {
         for(int indexs = 0; indexs< array.length; indexs++){
           array[indexs] = console.nextInt();
         }
-       // if (array.length == 0){
-         //  return;}
         
-        int small = array[0];
+        int large = array[0];
         int index = 0;
         
-        for (int i = 0; i < array.length; i++)
-           if (array[i] > small){
-              small = array[i];
+        for (int i = 0; i < array.length; i++){
+           if (array[i] > large){
+              large = array[i];
               index = i;
-}
-        System.out.println("\nThe largest number is: " + small + "\nIt is in index element: " + index);
-        //System.out.print(small);
-  
-    }
-    
-
-
-}
+            }//end if
+        }//end for-loop
+        System.out.println("\nThe largest number is: " + large + "\nIt is in index element: " + index);
+    }//end main
+}//end LastLargestIndex
