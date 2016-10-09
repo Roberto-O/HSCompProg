@@ -23,7 +23,6 @@ public class SmallestIndex {
 }
         System.out.println("The smallest number is: " + small + "\nIt is in index element: " + index);
         
-  
     }
     
 }
