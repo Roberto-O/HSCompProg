@@ -92,5 +92,5 @@ while(accountnumber != -1){
             return amountDue;
   }
  }
-}  
+}//end class
 //321
